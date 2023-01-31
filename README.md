@@ -9,5 +9,5 @@ This repository contains all of the notes taken by [SEAF39] for the Lighthouse L
 
 Table of Contents
 
-* [Week 1](/C:\Users\SAM-TECH\lighthouse\lighthouse-web-notes\Week_1)
-  * [Day 1](/C:\Users\SAM-TECH\lighthouse\lighthouse-web-notes\Week_1\Day_1)
+* [Week 1](/C:/Users/SAM-TECH/lighthouse/lighthouse-web-notes/Week_1)
+  * [Day 1](/C:/Users/SAM-TECH/lighthouse/lighthouse-web-notes/Week_1/Day_1)
