@@ -21,7 +21,7 @@ function average(list) {
 
   // loop through each number in the list
   for (var num of list) {
-    // add the current number to the sum
+    // add the current number to the sum here
     sum += num;
   }
 
