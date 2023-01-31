@@ -9,5 +9,5 @@ This repository contains all of the notes taken by [SEAF39](https://github.com/S
 
 Table of Contents
 
-* [Week 1](/Week_1)
-  * [Day 1](/Week_1/Day_1)
+* [week 1](/week_1)
+  * [day 1](/week_1/Day_1)
