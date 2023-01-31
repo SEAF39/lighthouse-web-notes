@@ -5,7 +5,7 @@
 
 ## Summary 
 
-This repository contains all of the notes taken by [SEAF39] (https://github.com/SEAF39) for the Lighthouse Labs Web Development Flex Bootcamp 2023.
+This repository contains all of the notes taken by [SEAF39](https://github.com/SEAF39) for the Lighthouse Labs Web Development Flex Bootcamp 2023.
 
 Table of Contents
 
