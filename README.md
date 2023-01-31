@@ -5,7 +5,9 @@
 
 ## Summary 
 
-This repository contains all of the notes taken by [SEAF39] for the Lighthouse Labs Web Development Flex Bootcamp.
+This repository contains all of the notes taken by [SEAF39] for the Lighthouse Labs Web Development Flex Bootcamp 2023.
 
-* Week 1
-  * Day 1
+Table of Contents
+
+* [Week 1](C:\Users\SAM-TECH\lighthouse\lighthouse-web-notes\Week_1)
+  * [Day 1](C:\Users\SAM-TECH\lighthouse\lighthouse-web-notes\Week_1\Day_1)
