@@ -1,6 +1,6 @@
 
 // Exercise 1 - Callback Arguments
-
+// Module_1 - Week2
 
 // define the findWaldo function that takes in an array and a callback function as arguments
 function findWaldo(arr, callback) {
@@ -23,5 +23,4 @@ function actionWhenFound(index) {
 
 // call the findWaldo function with an array and the actionWhenFound function as arguments
 findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
-
 
