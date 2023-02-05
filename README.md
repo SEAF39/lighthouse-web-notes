@@ -8,7 +8,5 @@ Table of Contents
 
 * [week 1](/week_1)
   * [day 1](/week_1/day_1)
-  [week 2](/week_2)
-  * [day 1][def]
-
-[def]: /week_2/day_1
+*  [week 2](/week_2)
+  * [day 1](/week_2/day_1)
