@@ -5,7 +5,7 @@
 // define the findWaldo function that takes in an array and a callback function as arguments
 function findWaldo(arr, callback) {
   // loop through the elements of the array
-  for (var i = 0; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     // if the current element is "Waldo", call the callback function with the index passed as an argument
     if (arr[i] === "Waldo") {
       callback(i);
