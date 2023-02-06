@@ -1,4 +1,4 @@
-// Anonymous Functions Excercise
+// Anonymous Functions Excercise //
 
 // define the findWaldo function that takes in an array and a callback function as arguments
 const findWaldo = (arr, callback) => {
