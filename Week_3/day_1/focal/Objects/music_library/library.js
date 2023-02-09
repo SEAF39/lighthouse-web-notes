@@ -62,10 +62,28 @@ printTracks()
 // p01: Coding Music - 2 tracks
 // t01: Code Monkey by Jonathan Coulton (Thing a Week Three)
 // t02: Model View Controller by James Dempsey (WWDC 2003)
+
+const tracks = {
+  p01: [
+    { name: "Code Monkey", artist: "Jonathan Coulton", album: "Thing a Week Three" },
+    { name: "Model View Controller", artist: "James Dempsey", album: "WWDC 2003" }
+  ],
+  p02: [
+    { name: "Linus and Lucy", artist: "Vince GUARALDI TRIO", album: "A Charlie Brown Christmas" },
+    { name: "Moon River", artist: "Audrey Hepburn", album: "Breakfast at Tiffany's" }
+  ]
+};
+
 const printPlaylist = function(playlistId) {
+  console.log(`${playlistId}: ${tracks[playlistId].length} tracks`);
+  for (let i = 0; i < tracks[playlistId].length; i++) {
+    let track = tracks[playlistId][i];
+    console.log(`t0${i + 1}: ${track.name} by ${track.artist} (${track.album})`);
+  }
+};
 
-}
-
+printPlaylist("p01");
+console.log();
 
 // adds an existing track to an existing playlist
 const addTrackToPlaylist = function(trackId, playlistId) {
