@@ -86,9 +86,42 @@ printPlaylist("p01");
 console.log();
 
 // adds an existing track to an existing playlist
-const addTrackToPlaylist = function(trackId, playlistId) {
 
-}
+const tracks = [
+  { id: "t01", name: "Code Monkey", artist: "Jonathan Coulton", album: "Thing a Week Three" },
+  { id: "t02", name: "Model View Controller", artist: "James Dempsey", album: "WWDC 2003" },
+  { id: "t03", name: "Linus and Lucy", artist: "Vince GUARALDI TRIO", album: "A Charlie Brown Christmas" },
+  { id: "t04", name: "Moon River", artist: "Audrey Hepburn", album: "Breakfast at Tiffany's" }
+];
+
+const playlists = {
+  p01: ["t01", "t02"],
+  p02: ["t03", "t04"]
+};
+
+const addTrackToPlaylist = function(trackId, playlistId) {
+  let trackExists = tracks.some(function(track) {
+    return track.id === trackId;
+  });
+
+  let playlistExists = playlists.hasOwnProperty(playlistId);
+
+  if (!trackExists) {
+    console.log(`Track with id '${trackId}' doesn't exist.`);
+    return;
+  }
+
+  if (!playlistExists) {
+    console.log(`Playlist with id '${playlistId}' doesn't exist.`);
+    return;
+  }
+
+  playlists[playlistId].push(trackId);
+  console.log(`Track with id '${trackId}' added to playlist with id '${playlistId}'.`);
+};
+
+addTrackToPlaylist("t01", "p02");
+console.log();
 
 
 // generates a unique id
