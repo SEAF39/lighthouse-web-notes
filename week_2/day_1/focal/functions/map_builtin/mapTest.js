@@ -15,3 +15,7 @@ const nameLengths = lighthouses.map(lighthouse => {
 // Log the array of lengths to the console
 console.log(nameLengths);
 // Output: [ 15, 13, 11, 16, 10, 11, 10 ]
+
+
+
+
