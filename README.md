@@ -13,3 +13,10 @@ Table of Contents
   * [day 1][def]
 
 [def]: /week_2/day_1
+
+* [week 3](/week_3)
+  * [day 1][def]
+
+[def]: /week_3/day_1
+
+
