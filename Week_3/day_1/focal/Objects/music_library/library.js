@@ -176,11 +176,13 @@ printPlaylist("p01");
 
 
 
-
 // adds a track to the library
 const addTrack = function(name, artist, album) {
-
-}
+  let trackId = generateUid();
+  let track = { id: trackId, name: name, artist: artist, album: album };
+  tracks.push(track);
+  console.log(`Track with id '${trackId}' added.`);
+};
 
 
 // adds a playlist to the library
