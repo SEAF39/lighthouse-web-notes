@@ -12,5 +12,5 @@ Table of Contents
 * [week 2](/week_2)
   * [day 1](/week_2/day_1)
 
-* [week 3](/week_3)
-  * [day 1](/week_3/day_1)
+* [week 3](/Week_3)
+  * [day 1](/Week_3/day_1)
