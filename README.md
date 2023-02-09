@@ -18,5 +18,3 @@ Table of Contents
   * [day 1][def]
 
 [def]: /week_3/day_1
-
-
