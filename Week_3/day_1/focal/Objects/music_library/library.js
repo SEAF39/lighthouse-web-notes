@@ -126,9 +126,55 @@ console.log();
 
 // generates a unique id
 // (already implemented: use this for addTrack and addPlaylist)
+
+const tracks = [
+  { id: "t01", name: "Code Monkey", artist: "Jonathan Coulton", album: "Thing a Week Three" },
+  { id: "t02", name: "Model View Controller", artist: "James Dempsey", album: "WWDC 2003" }
+];
+
+const playlists = [
+  { id: "p01", name: "Coding Music", tracks: ["t01", "t02"] }
+];
+
+const printPlaylist = function(playlistId) {
+  let playlist = playlists.find(p => p.id === playlistId);
+  console.log(`${playlist.id}: ${playlist.name} - ${playlist.tracks.length} tracks`);
+  playlist.tracks.forEach((trackId, index) => {
+    let track = tracks.find(t => t.id === trackId);
+    console.log(`t${index + 1}: ${track.name} by ${track.artist} (${track.album})`);
+  });
+};
+
+const addTrackToPlaylist = function(trackId, playlistId) {
+  let playlist = playlists.find(p => p.id === playlistId);
+  playlist.tracks.push(trackId);
+  console.log(`Track with id '${trackId}' added to playlist '${playlistId}'.`);
+};
+
+const addTrack = function(name, artist, album) {
+  let trackId = generateUid();
+  let track = { id: trackId, name: name, artist: artist, album: album };
+  tracks.push(track);
+  console.log(`Track with id '${trackId}' added.`);
+};
+
+const addPlaylist = function(name) {
+  let playlistId = generateUid();
+  let playlist = { id: playlistId, name: name, tracks: [] };
+  playlists.push(playlist);
+  console.log(`Playlist with id '${playlistId}' added.`);
+};
+
 const generateUid = function() {
   return Math.floor((1 + Math.random()) * 0x10000).toString(16).substring(1);
-}
+};
+
+addTrack("Wonderwall", "Oasis", "Morning Glory");
+addPlaylist("90s Hits");
+addTrackToPlaylist("t01", "p01");
+printPlaylist("p01");
+
+
 
 
 // adds a track to the library
