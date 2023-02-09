@@ -56,7 +56,7 @@ const printTracks = function() {
   }
 };
 printTracks()
-     console.log();
+     console.log(); 
 
 // prints a list of tracks for a given playlist, using the following format:
 // p01: Coding Music - 2 tracks
