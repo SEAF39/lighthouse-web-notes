@@ -1,5 +1,5 @@
 // Module 1 - Week3
-//Summing with Recursion (Example)
+//Summing with Recursion (Example).
 
 function sumToOne(n) {
     let sum = 0;
