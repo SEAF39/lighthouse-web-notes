@@ -1,0 +1,16 @@
+{
+  "name": "car",
+  "version": "1.0.0",
+  "description": "Should I Buy This Car Assignment - Module1 - Week3",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "SEAF39",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.7",
+    "mocha": "^9.2.2"
+  }
+}
