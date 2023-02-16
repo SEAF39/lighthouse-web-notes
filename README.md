@@ -16,4 +16,4 @@ Table of Contents
   * [day 1](/week_3/day_1)
 
 * [week 4](/week_4)
-  * [day 1](/week_3/day_1)
+  * [day 1](/week_4/day_1)
