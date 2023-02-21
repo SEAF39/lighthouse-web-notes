@@ -28,7 +28,7 @@ describe('breedDetails', function() {
     // Call the function with an unknown breed and store the result in actualOutput
     const actualOutput = breedDetails('Unknown');
 
-    // Check that the output is undefined
+    // Check that the output is undefined.
     assert.strictEqual(actualOutput, undefined);
   });
 });
