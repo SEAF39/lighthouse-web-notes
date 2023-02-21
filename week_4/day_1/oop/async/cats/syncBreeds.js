@@ -20,6 +20,6 @@ const breedDetails = function(breed) {
 };
 
 
-// export the breedDetails function so that it can be used in other modules
+// export the breedDetails function so that it can be used in others modules
 
 module.exports = breedDetails;
