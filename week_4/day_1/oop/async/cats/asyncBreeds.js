@@ -15,7 +15,7 @@ const breedDetailsFromFile = function (breed, callback) {
     return callback(data.trim());
   });
 
-  // Log a message indicating that readFile has been called
+  // Log a message indicating that readFile has been called.
   console.log("breedDetailsFromFile: Calling readFile...");
 };
 
