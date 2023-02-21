@@ -1,12 +1,8 @@
   // main.js
-  
-  const sayHelloTo = require('./myModule');
-  
-  console.log('sayHelloTo: ', sayHelloTo);
-  
-  sayHelloTo('Bernie');
-  
-  Now, when we run the main.js file, it should print:
-  
-  sayHelloTo: [Function: sayHelloTo]
-  Hello, Bernie
+
+  const sayHelloTo = function(person) {
+    console.log(`Hello, ${person}`);
+  }
+  // add this line to the end of the file.
+  module.exports = sayHelloTo;
+
