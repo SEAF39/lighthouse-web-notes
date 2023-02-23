@@ -5,4 +5,8 @@ const conn = net.createConnection({
   port: 3000,
 });
 
+conn.on("data", (data) => {
+  console.log("Server says: ", data);
+});
+
 conn.setEncoding("utf8"); // interpret data as text
