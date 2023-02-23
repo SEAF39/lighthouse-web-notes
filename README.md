@@ -17,3 +17,6 @@ Table of Contents
 
 * [week 4](/week_4)
   * [day 1](/week_4/day_1)
+
+* [week 5](/week_5)
+  * [day 1](/week_5/day_1)  
