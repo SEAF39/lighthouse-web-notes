@@ -7,9 +7,18 @@ const connect = function () {
     port: // PORT number here,
   });
 
+  conn.on("connect", () => {
+    console.log("Connected to server!");
+    
+    conn.on("data", (data) => {
+      console.log("Received data from server:", data);
+    });
+  });
+  
+
   // interpret incoming data as text
   conn.setEncoding("utf8");
-  conn.on("event name", functionThatDoesSomething)
+
   return conn;
 };
 
