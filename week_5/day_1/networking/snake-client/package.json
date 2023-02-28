@@ -8,7 +8,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "play": "node play.js"
+    "client": "node client.js"
   },
   "dependencies": {
     "express": "^4.17.1"
