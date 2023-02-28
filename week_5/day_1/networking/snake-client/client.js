@@ -15,8 +15,7 @@ const connect = function () {
     });
   });
   
-
-  // interpret incoming data as text
+  // interpret incoming data as text.
   conn.setEncoding("utf8");
 
   return conn;
