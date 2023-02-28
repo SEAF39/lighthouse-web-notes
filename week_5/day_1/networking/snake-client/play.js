@@ -34,7 +34,6 @@ const handleUserInput = function () {
 };
 
 
-
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
