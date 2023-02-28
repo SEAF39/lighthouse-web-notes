@@ -1,27 +1,33 @@
 // setup interface to handle user input from stdin
 
-const setupInput = function () {
-  const stdin = process.stdin;
-  stdin.setRawMode(true);
-  stdin.setEncoding("utf8");
-  stdin.resume();
-  return stdin;
+const stdin = process.stdin;
+
+const messages = {
+  1: "Hi, everyone!",
+  2: "Let's play!",
+  3: "Good game, well played!",
+  4: "Oops, sorry about that!",
+  5: "Nice moves!",
 };
 
-const handleUserInput = function (key) {
-  if (key === '\u0003') { // ctrl-c (end of text character)
+const handleUserInput = (key) => {
+  if (key === '\u0003') {
     process.exit();
-  }
-  if (key === 'w') {
-    connection.write('Move: up');
-  } else if (key === 'a') {
-    connection.write('Move: left');
-  } else if (key === 's') {
-    connection.write('Move: down');
-  } else if (key === 'd') {
-    connection.write('Move: right');
+  } else if (messages[key]) {
+    connection.write(`Say: ${messages[key]}`);
   }
 };
+
+const setupInput = (conn) => {
+  connection = conn;
+  stdin.setRawMode(true);
+  stdin.setEncoding('utf8');
+  stdin.resume();
+  stdin.on('data', handleUserInput);
+};
+
+
+
 
 
 
