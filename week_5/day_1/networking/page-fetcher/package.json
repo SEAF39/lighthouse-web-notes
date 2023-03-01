@@ -10,7 +10,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/your-repo.git"
+    "url": "https://github.com/SEAF39/lighthouse-web-notes/tree/master/week_5/day_1/networking/page-fetcher"
   },
   "dependencies": {
     "request": "^2.88.2"
