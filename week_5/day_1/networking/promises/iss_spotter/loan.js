@@ -1,12 +1,12 @@
-let creditLimit = 5000;
+let creditLimit = 0;
 
 const loanOut = function(amount) {
   return new Promise((resolve, reject) => {
-    if (creditLimit - amount >= 0) {
+    if (creditLimit <= 0) {
+      reject("Insufficient Funds!");
+    } else { 
       creditLimit -= amount;
       resolve(amount);
-    } else {
-      reject("Sorry, your credit limit is not enough.");
     }
   });
 };
