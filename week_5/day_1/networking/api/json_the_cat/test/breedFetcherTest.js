@@ -1,19 +1,23 @@
-// breedFetcherTest.js
+const assert = require('chai').assert;
+const breedFetcher = require('../breedFetcher');
 
-const { fetchBreedDescription } = require('../breedFetcher');
-const { assert } = require('chai');
+describe('breedFetcher', () => {
+  it('returns a string description for a valid breed, with data', (done) => {
+    breedFetcher('Siberian', (error, description, data) => {
+      assert.equal(error, null);
+      assert.typeOf(description, 'string');
+      assert.typeOf(data, 'array');
+      assert.strictEqual(data.length, 1);
+      done();
+    });
+  });
 
-describe('fetchBreedDescription', () => {
-  it('returns a string description for a valid breed, via callback', (done) => {
-    fetchBreedDescription('Siberian', (err, desc) => {
-      // we expect no error for this scenario
-      assert.equal(err, null);
-
-      const expectedDesc = "The Siberians dog like temperament and affection makes the ideal lap cat and will live quite happily indoors. Very agile and powerful, the Siberian cat can easily leap and reach high places, including the tops of refrigerators and even doors.";
-
-      // compare returned description
-      assert.equal(expectedDesc, desc.trim());
-
+  it('returns breed not found for an invalid breed, with data', (done) => {
+    breedFetcher('invalid-breed', (error, description, data) => {
+      assert.equal(description, null);
+      assert.equal(error, 'Breed "invalid-breed" not found.');
+      assert.typeOf(data, 'array');
+      assert.strictEqual(data.length, 0);
       done();
     });
   });
