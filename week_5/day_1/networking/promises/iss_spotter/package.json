@@ -1,0 +1,19 @@
+{
+  "name": "iss_spotter",
+  "version": "1.0.0",
+  "description": "ISS Spotter I",
+  "main": "index.js",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SEAF39/lighthouse-web-notes/tree/master/week_5/day_1/networking"
+  },
+  "author": "SEAF39",
+  "license": "ISC"
+}
