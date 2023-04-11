@@ -13,7 +13,7 @@ Before you can run this client, you will need to be running the server side whic
 
 
 ### SERVER SIDE
-- Follow steps inside the snake-server-multiplayer repo to run the server side
+- Follow steps inside the snake-server-multiplayer repo to run the server side.
 
 ### CLIENT SIDE
 - Run the development snake client using the `node play.js` command after you start server side.
